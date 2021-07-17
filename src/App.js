@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import getEmails from './api/API';
+
+import BasicTable from './components/table';
 
 function App() {
+  console.log("App running");
+  getEmails();
+  console.log("Should log emails");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>First Step To World Domination</h1>
+      <BasicTable></BasicTable>
     </div>
   );
 }
