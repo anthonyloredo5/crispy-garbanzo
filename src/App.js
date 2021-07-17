@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <h1>First Step To World Domination</h1>
-      <BasicTable></BasicTable>
+      <BasicTable />
     </div>
   );
 }
